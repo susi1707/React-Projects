@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  padding-bottom: 0.5px;
+   
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +35,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#adduser{
+  padding: 5px;
+}
+img{
+  width: 5px;
+  height: 5px;
+}
+#admincardgrid{
+  margin-top: 2%;
+  box-shadow: 1px 1px 6px black;
+}
+
+.active-link {
+  font-weight: bold;
+  position: relative;
+  color: black;
+}
+.nav-link{
+  color: black;
+  background: none;
+    border: none;    
+    cursor: pointer;
+}
+.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust this value to position the underline as desired */
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 251, 3);
 }
